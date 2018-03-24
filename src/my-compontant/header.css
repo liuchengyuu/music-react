@@ -1,0 +1,14 @@
+.components-header{
+  box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+  -webkit-box-sizing:border-box; /* Safari */
+  padding: 15px 25px;
+  background: white;
+  box-shadow: 1px 1px #ccc;
+}
+.caption {
+  display: inline-block;
+  font-size: 20px;
+  text-indent: 20px;
+  vertical-align: bottom;
+}
