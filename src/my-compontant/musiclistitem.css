@@ -1,0 +1,12 @@
+.components-musiclistitem{
+  margin: 0;
+  line-height: 40px;
+  font-size: 14px;
+  text-indent: 10px;
+  background-color: #f3f3f3;
+  border-bottom: 2px solid #ececec;
+  cursor: pointer;
+}
+.focus{
+  color: #31c27c;
+}
