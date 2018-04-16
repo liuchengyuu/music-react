@@ -71,7 +71,20 @@ class App extends Component {
     return (
       <div>
         <Header/>
-          
+        <HashRouter>
+          <Switch>
+            <Route path='/' exact render={(props) => (
+              <Player {...props} currentMusicItem={this.state.currentMusicItem}
+                      callbackPlayNext={this.playNext} callbackPlayPrev={this.playPrev}/>
+            )}/>
+            <Route path='/list' exact render={(props) => (
+              <MusicList {...props} musicList={this.state.musicList}
+                         currentMusicItem={this.state.currentMusicItem}
+                         callbackPlay={this.playMusic}
+              />
+            )}/>
+          </Switch>
+        </HashRouter>
         <div id="player"></div>
       </div>
     );
